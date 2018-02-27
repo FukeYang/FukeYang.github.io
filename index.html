@@ -351,31 +351,15 @@
 
       
         
-          
-            <h1 id="swift"><a href="#swift" class="headerlink" title="swift"></a>swift</h1><p>typealias 用来为已存在的类型重新定义名字<br>eg: typealias E = PropertyType</p>
+          <h1 id="swift"><a href="#swift" class="headerlink" title="swift"></a>swift</h1><p>typealias 用来为已存在的类型重新定义名字<br>eg: typealias E = PropertyType</p>
 <p>associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。<br>eg: protocol TableViewCell {<br>        associatedtype T<br>        func updateCell(data: T)<br>    }</p>
-<p><--more--></--more--></p>
-<p>set和get 赋值、取值的时候调用<br>调用set方法的时候，系统会有一个newValue，将newValue赋值给我们定义的变量，然后从get方法里面返回<br>eg:<br>    @objc var houseID: Int {<br>        set { viewModel.house_id = newValue }<br>        get { return viewModel.house_id }<br>    }</p>
-<pre><code>//定义一个变量 
-var _title: String?
-var title: String? {
-    set {
-        _title=newValue
-    }
-    get {
-        return _title
-   }
-}
-var identifa: String { return NSStringFromClass(T.self) }  
-</code></pre><p>willSet 属性改变之前调用（有一个newValue参数），didSet 属性改变之后调用（有一个oldValue参数)。<br>属性初始化时，两个方法都不会调用，只有在设置属性值时才会调用，设置的值和原来的值一样时，也会被调用。</p>
-<p>unowned 属性不允许设置为可选类型，必须在init方法中初始化值<br>weak    属性可以是可选类型，即允许有nil值得情况</p>
-<p>访问关键字权限从高到低<br>open        都可以访问，也可以override<br>public      只能在当前module中能被继承，其他modele只能访问无法override<br>internal    可以访问自己模块中源文件的任何实体，但是别人不能访问该模块中源文件的实体<br>fileprivate 文件内私有<br>private     只能在类或结构体中访问，作用域外无法访问</p>
-<p>final 声明的类不能被继承，声明的属性、方法、下标不能被重写</p>
-<p>与声明有关的关键字：class、deinit、enum、extension、func、import、init、let、protocol、static、struct、subscript、typealias和var。<br>与语句有关的关键字：break、case、continue、default、do、else、fallthrough、if、in、for、return、switch、where和while。<br>表达式和类型关键字：as、dynamicType、is、new、super、self、Self、Type、<strong>COLUMN</strong>、<strong>FILE</strong>、<strong>FUNCTION</strong>和<strong>LINE</strong>。<br>在特定上下文中使用的关键字：associativity、didSet、get、infix、inout、left、mutating、none、nonmutating、operator、override、postfix、precedence、prefix、rightset、unowned、unowned(safe)、unowned(unsafe)、weak和willSet。</p>
-<p>enum 枚举 支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值<br>通过关联值将额外信息附加到enum case上<br>eg：<br>enum Trade {<br>    case Buy(stock: String, amount: Int)<br>    case Sell(stock: String, amount: Int)<br>}</p>
-<p>sizeToFit:会计算出最优的 size 而且会改变自己的size<br>sizeThatFits:会计算出最优的 size 但是不会改变 自己的 size</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/26/swift/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
