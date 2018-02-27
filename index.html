@@ -354,7 +354,8 @@
           
             <h1 id="swift"><a href="#swift" class="headerlink" title="swift"></a>swift</h1><p>typealias 用来为已存在的类型重新定义名字<br>eg: typealias E = PropertyType</p>
 <p>associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。<br>eg: protocol TableViewCell {<br>        associatedtype T<br>        func updateCell(data: T)<br>    }</p>
-<p>&lt; !–more–&gt;<br>set和get 赋值、取值的时候调用<br>调用set方法的时候，系统会有一个newValue，将newValue赋值给我们定义的变量，然后从get方法里面返回<br>eg:<br>    @objc var houseID: Int {<br>        set { viewModel.house_id = newValue }<br>        get { return viewModel.house_id }<br>    }</p>
+<p><--more--></--more--></p>
+<p>set和get 赋值、取值的时候调用<br>调用set方法的时候，系统会有一个newValue，将newValue赋值给我们定义的变量，然后从get方法里面返回<br>eg:<br>    @objc var houseID: Int {<br>        set { viewModel.house_id = newValue }<br>        get { return viewModel.house_id }<br>    }</p>
 <pre><code>//定义一个变量 
 var _title: String?
 var title: String? {
