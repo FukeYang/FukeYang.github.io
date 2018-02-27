@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="swifttypealias 用来为已存在的类型重新定义名字eg: typealias E = PropertyType associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。eg: protocol TableViewCell {        as">
+<meta name="description" content="swift常用知识点typealias 用来为已存在的类型重新定义名字eg: typealias E = PropertyType associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。eg: protocol TableViewCell {">
 <meta name="keywords" content="swift">
 <meta property="og:type" content="article">
 <meta property="og:title" content="swift">
 <meta property="og:url" content="http://yoursite.com/2018/02/26/swift/index.html">
 <meta property="og:site_name" content="FukeYang的博客">
-<meta property="og:description" content="swifttypealias 用来为已存在的类型重新定义名字eg: typealias E = PropertyType associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。eg: protocol TableViewCell {        as">
+<meta property="og:description" content="swift常用知识点typealias 用来为已存在的类型重新定义名字eg: typealias E = PropertyType associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。eg: protocol TableViewCell {">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-27T03:21:37.582Z">
+<meta property="og:updated_time" content="2018-02-27T09:39:49.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="swift">
-<meta name="twitter:description" content="swifttypealias 用来为已存在的类型重新定义名字eg: typealias E = PropertyType associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。eg: protocol TableViewCell {        as">
+<meta name="twitter:description" content="swift常用知识点typealias 用来为已存在的类型重新定义名字eg: typealias E = PropertyType associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。eg: protocol TableViewCell {">
 
 
 
@@ -354,10 +354,10 @@
       
 
       
-        <h1 id="swift"><a href="#swift" class="headerlink" title="swift"></a>swift</h1><p>typealias 用来为已存在的类型重新定义名字<br>eg: typealias E = PropertyType</p>
-<p>associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。<br>eg: protocol TableViewCell {<br>        associatedtype T<br>        func updateCell(data: T)<br>    }</p>
+        <h2 id="swift常用知识点"><a href="#swift常用知识点" class="headerlink" title="swift常用知识点"></a>swift常用知识点</h2><h1 id="typealias-用来为已存在的类型重新定义名字"><a href="#typealias-用来为已存在的类型重新定义名字" class="headerlink" title="typealias 用来为已存在的类型重新定义名字"></a>typealias 用来为已存在的类型重新定义名字</h1><p>eg: typealias E = PropertyType</p>
+<h1 id="associatedtype-关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。"><a href="#associatedtype-关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。" class="headerlink" title="associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。"></a>associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。</h1><p>eg: protocol TableViewCell {<br>        associatedtype T<br>        func updateCell(data: T)<br>    }</p>
 <a id="more"></a>
-<p>set和get 赋值、取值的时候调用<br>调用set方法的时候，系统会有一个newValue，将newValue赋值给我们定义的变量，然后从get方法里面返回<br>eg:<br>    @objc var houseID: Int {<br>        set { viewModel.house_id = newValue }<br>        get { return viewModel.house_id }<br>    }</p>
+<h1 id="set和get-赋值、取值的时候调用"><a href="#set和get-赋值、取值的时候调用" class="headerlink" title="set和get 赋值、取值的时候调用"></a>set和get 赋值、取值的时候调用</h1><p>调用set方法的时候，系统会有一个newValue，将newValue赋值给我们定义的变量，然后从get方法里面返回<br>eg:<br>    @objc var houseID: Int {<br>        set { viewModel.house_id = newValue }<br>        get { return viewModel.house_id }<br>    }</p>
 <pre><code>//定义一个变量 
 var _title: String?
 var title: String? {
@@ -371,11 +371,16 @@ var title: String? {
 var identifa: String { return NSStringFromClass(T.self) }  
 </code></pre><p>willSet 属性改变之前调用（有一个newValue参数），didSet 属性改变之后调用（有一个oldValue参数)。<br>属性初始化时，两个方法都不会调用，只有在设置属性值时才会调用，设置的值和原来的值一样时，也会被调用。</p>
 <p>unowned 属性不允许设置为可选类型，必须在init方法中初始化值<br>weak    属性可以是可选类型，即允许有nil值得情况</p>
-<p>访问关键字权限从高到低<br>open        都可以访问，也可以override<br>public      只能在当前module中能被继承，其他modele只能访问无法override<br>internal    可以访问自己模块中源文件的任何实体，但是别人不能访问该模块中源文件的实体<br>fileprivate 文件内私有<br>private     只能在类或结构体中访问，作用域外无法访问</p>
+<h1 id="访问关键字权限从高到低"><a href="#访问关键字权限从高到低" class="headerlink" title="访问关键字权限从高到低"></a>访问关键字权限从高到低</h1><p>open        都可以访问，也可以override<br>public      只能在当前module中能被继承，其他modele只能访问无法override<br>internal    可以访问自己模块中源文件的任何实体，但是别人不能访问该模块中源文件的实体<br>fileprivate 文件内私有<br>private     只能在类或结构体中访问，作用域外无法访问</p>
 <p>final 声明的类不能被继承，声明的属性、方法、下标不能被重写</p>
-<p>与声明有关的关键字：class、deinit、enum、extension、func、import、init、let、protocol、static、struct、subscript、typealias和var。<br>与语句有关的关键字：break、case、continue、default、do、else、fallthrough、if、in、for、return、switch、where和while。<br>表达式和类型关键字：as、dynamicType、is、new、super、self、Self、Type、<strong>COLUMN</strong>、<strong>FILE</strong>、<strong>FUNCTION</strong>和<strong>LINE</strong>。<br>在特定上下文中使用的关键字：associativity、didSet、get、infix、inout、left、mutating、none、nonmutating、operator、override、postfix、precedence、prefix、rightset、unowned、unowned(safe)、unowned(unsafe)、weak和willSet。</p>
-<p>enum 枚举 支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值<br>通过关联值将额外信息附加到enum case上<br>eg：<br>enum Trade {<br>    case Buy(stock: String, amount: Int)<br>    case Sell(stock: String, amount: Int)<br>}</p>
+<h1 id="与声明有关的关键字："><a href="#与声明有关的关键字：" class="headerlink" title="与声明有关的关键字："></a>与声明有关的关键字：</h1><p>class、deinit、enum、extension、func、import、init、let、protocol、static、struct、subscript、typealias和var。</p>
+<h1 id="与语句有关的关键字："><a href="#与语句有关的关键字：" class="headerlink" title="与语句有关的关键字："></a>与语句有关的关键字：</h1><p>break、case、continue、default、do、else、fallthrough、if、in、for、return、switch、where和while。</p>
+<h1 id="表达式和类型关键字："><a href="#表达式和类型关键字：" class="headerlink" title="表达式和类型关键字："></a>表达式和类型关键字：</h1><p>as、dynamicType、is、new、super、self、Self、Type、<strong>COLUMN</strong>、<strong>FILE</strong>、<strong>FUNCTION</strong>和<strong>LINE</strong>。</p>
+<h1 id="在特定上下文中使用的关键字："><a href="#在特定上下文中使用的关键字：" class="headerlink" title="在特定上下文中使用的关键字："></a>在特定上下文中使用的关键字：</h1><p>associativity、didSet、get、infix、inout、left、mutating、none、nonmutating、operator、override、postfix、precedence、prefix、rightset、unowned、unowned(safe)、unowned(unsafe)、weak和willSet。</p>
+<h1 id="enum-枚举-支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值"><a href="#enum-枚举-支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值" class="headerlink" title="enum 枚举 支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值"></a>enum 枚举 支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值</h1><p>通过关联值将额外信息附加到enum case上<br>eg：<br>enum Trade {<br>    case Buy(stock: String, amount: Int)<br>    case Sell(stock: String, amount: Int)<br>}</p>
 <p>sizeToFit:会计算出最优的 size 而且会改变自己的size<br>sizeThatFits:会计算出最优的 size 但是不会改变 自己的 size</p>
+<h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><p>swift的基本类型String，Int，Double，Bool和无关联值得枚举都是遵循Hashable协议，Hashable协议遵守Equatable协议，提供hashValue方法用在判断遵循协议对象是否相等时用。</p>
+<p>函数、扩展和关联类型都可以使用where语句，where语句是对泛型在应用时的一种约束。</p>
 
       
     </div>
@@ -557,7 +562,7 @@ var identifa: String { return NSStringFromClass(T.self) }
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#swift"><span class="nav-number">1.</span> <span class="nav-text">swift</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#swift常用知识点"><span class="nav-number">1.</span> <span class="nav-text">swift常用知识点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#typealias-用来为已存在的类型重新定义名字"><span class="nav-number"></span> <span class="nav-text">typealias 用来为已存在的类型重新定义名字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#associatedtype-关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。"><span class="nav-number"></span> <span class="nav-text">associatedtype 关联类型，只能在协议中使用，定义一个协议时，有时候声明一个或多个关联类型作为协议定义的一部分将会非常有用。关联类型提供一个占位名，其代表的实际类型在协议被采纳时才会被指定。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#set和get-赋值、取值的时候调用"><span class="nav-number"></span> <span class="nav-text">set和get 赋值、取值的时候调用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#访问关键字权限从高到低"><span class="nav-number"></span> <span class="nav-text">访问关键字权限从高到低</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#与声明有关的关键字："><span class="nav-number"></span> <span class="nav-text">与声明有关的关键字：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#与语句有关的关键字："><span class="nav-number"></span> <span class="nav-text">与语句有关的关键字：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表达式和类型关键字："><span class="nav-number"></span> <span class="nav-text">表达式和类型关键字：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在特定上下文中使用的关键字："><span class="nav-number"></span> <span class="nav-text">在特定上下文中使用的关键字：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#enum-枚举-支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值"><span class="nav-number"></span> <span class="nav-text">enum 枚举 支持四种关联值类型：整型、浮点型、字符串、布尔类型。通过rawValue属性来读取枚举的值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#泛型"><span class="nav-number"></span> <span class="nav-text">泛型</span></a></div>
             
 
           </div>
